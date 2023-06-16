@@ -25,3 +25,42 @@ ios_base::sync_with_stdio(false)는 C와 C++의 버퍼를 분리.&nbsp;
 이것을 사용하면 cin/cout이 더 이상 stdin/stdout과 맞춰 줄 필요가 없으므로 속도가 빨라진다.&nbsp; 
 단, 버퍼가 분리되었으므로 cin과 scanf, gets, getchar 등을 같이 혼용하면 안되고, cout과 printf, puts, putchar 등을 같이 사용하면 안된다.
 그 이외의 C++헤더나 STL의 사용법은 코딩해나가면서 숙지.
+
+---
+### 그 외 &nbsp; 
+for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.&nbsp;
+##### 후위연산자는 값을 메모리에 기억했다가 증가시키기 때문임.
+```
+  for(int i=0;i<n;++i) // 전위연산자
+```
+```
+  for(int i=0;i<n;i++) // 후위연산자
+```
+```
+  Foo& Foo::operator++()   // called for ++i
+  {
+      this-> data += 1;
+      return *this;
+  }
+  
+  Foo Foo::operator++(int ignored_dummy_value)   // called for i++
+  {
+      Foo tmp(*this);   // variable "tmp" cannot be optimized away by the compiler
+      ++(*this);
+      return tmp;
+  }
+```
+for-each 문
+```
+  vector<int> v(n);
+  for(int i=0;i<n;++i){
+      v[i]=i;
+  }
+  // vector를 for-each문으로 탐색할 수 있다.
+  for(int k:v){
+      cout<<k<<'\n;
+  }
+```
+
+
+
