@@ -1,2 +1,3 @@
-# algorithm
-#using c++
+###### Algorithm
+---
+# using c++
