@@ -1,7 +1,7 @@
 ##### C++ 시작하기
 ---
-##기존 C에서 C++로 바꾸면서 stdio.h나 printf같은 C형식의 헤더 혹은 입출력 배제&nbsp; 
-#standard input output-> iostream
+## 기존 C에서 C++로 바꾸면서 stdio.h나 printf같은 C형식의 헤더 혹은 입출력 배제&nbsp; 
+# standard input output-> iostream
 ```
 #include <iostream>
 int main(){
@@ -12,7 +12,7 @@ int main(){
 }
 ```
 ---
-##또한 자료구조를 이용할 시, 직접 구현보다는 동적 할당이 편리한 C++의 STL 사용&nbsp; 
+## 또한 자료구조를 이용할 시, 직접 구현보다는 동적 할당이 편리한 C++의 STL 사용&nbsp; 
 vector,pair,tuple,stack,queue 등이 있음&nbsp; 
 그 이외의 기본적인 것들은 C와 다를 것이 없으나 빠른 입출력시&nbsp; 
 ```
