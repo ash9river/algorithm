@@ -64,8 +64,8 @@ for-each 문
 ---
 배열 함수로 전달하지 말고 다른 방법 [사용](http://www.tcpschool.com/c/c_memory_structure)
 * 지역변수는 스택 영역에 생성되고, 전역변수는 데이터 영역에 생성되기 때문에 데이터가 많은 경우 함수의 매개 변수로 전달시 실패할 수도 있음.(stack memory 초과)
-</br>
-ex) [백준 16496 큰 수 만들기](https://www.acmicpc.net/problem/16496) </br>
+<br/>
+ex) [백준 16496 큰 수 만들기](https://www.acmicpc.net/problem/16496) <br/>
 ##### 실패코드 </br>&nbsp; 
 ---
 ```
@@ -222,7 +222,7 @@ int main(){
 }
 ```
 ---
-배열의 매개변수 전달이 불가피한 경우, &를 사용하여 참조자로 사용
+배열의 매개변수 전달이 불가피한 경우, &를 사용하여 참조자로 사용<br/>
 [참고링크](https://www.acmicpc.net/board/view/38804)
 ```
   void function(const vector& v){}
