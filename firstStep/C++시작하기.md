@@ -221,7 +221,7 @@ int main(){
 }
 ```
 ---
-배열의 매개변수 전달이 불가피한 경우, &를 사용하여 참조자로 사용<br/>
+배열의 매개변수 전달이 불가피한 경우, &를 사용하여 참조자로 사용  
 [참고링크](https://www.acmicpc.net/board/view/38804)
 ```
   void function(const vector& v){}
