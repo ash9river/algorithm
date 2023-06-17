@@ -19,11 +19,11 @@ vector,pair,tuple,stack,queue 등이 있음&nbsp;
     cin.tie(0);
     ios_base::sync_with_stdio(0);
 ```
-cin.tie(NULL)은 cin과 cout의 묶음을 푼다. 
-기본적으로 cin으로 읽을 때 먼저 출력 버퍼를 비우는데, 입력과 출력을 여러 번 번갈아서 반복해야 하는 경우 필수적.
-ios_base::sync_with_stdio(false)는 C와 C++의 버퍼를 분리.
-이것을 사용하면 cin/cout이 더 이상 stdin/stdout과 맞춰 줄 필요가 없으므로 속도가 빨라진다.
-단, 버퍼가 분리되었으므로 cin과 scanf, gets, getchar 등을 같이 혼용하면 안되고, cout과 printf, puts, putchar 등을 같이 사용하면 안된다.
+cin.tie(NULL)은 cin과 cout의 묶음을 푼다. <br/>
+기본적으로 cin으로 읽을 때 먼저 출력 버퍼를 비우는데, 입력과 출력을 여러 번 번갈아서 반복해야 하는 경우 필수적이다. <br/><br/>
+ios_base::sync_with_stdio(false)는 C와 C++의 버퍼를 분리.<br/>
+이것을 사용하면 cin/cout이 더 이상 stdin/stdout과 맞춰 줄 필요가 없으므로 속도가 빨라진다. <br/><br/>
+단, 버퍼가 분리되었으므로 cin과 scanf, gets, getchar 등을 같이 혼용하면 안되고, cout과 printf, puts, putchar 등을 같이 사용하면 안된다.<br/>
 그 이외의 C++헤더나 STL의 사용법은 코딩해나가면서 숙지.
 
 ---
