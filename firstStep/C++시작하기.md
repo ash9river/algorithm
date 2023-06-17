@@ -64,7 +64,7 @@ for-each 문
 *그러나 보통 1000회 이상의 반복문 사용시 for문보다 while문이나 for-each문이 더 성능에 좋다.  
 *for문도 하향으로 비교하면 빠르다(단 비교연산자가 compare>0 일경우) [출처](https://stackoverflow.com/questions/1340589/are-loops-really-faster-in-reverse)
 > 그냥 가독성 좋은게 제일 좋다.
-> >by me
+> >by 내 생각
 ---
 지역 변수로 선언된 배열을 함수의 매개변수 전달시, 직접 전달해서 사용하지 않고, 다른 방법 [사용](http://www.tcpschool.com/c/c_memory_structure)
 * 지역변수는 스택 영역에 생성되고, 전역변수는 데이터 영역에 생성되기 때문에 데이터가 많은 경우 함수의 매개 변수로 전달시 실패할 수도 있음.(stack memory 초과)  
