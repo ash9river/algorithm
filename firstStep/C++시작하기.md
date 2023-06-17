@@ -67,6 +67,7 @@ for-each 문
 </br>
 ex) [백준 16496 큰 수 만들기](https://www.acmicpc.net/problem/16496) </br>
 ##### 실패코드 </br>&nbsp; 
+---
 ```
 
 #include <iostream>
@@ -141,8 +142,10 @@ int main(){
     }
 }
 ```
+---
 
 ##### 성공 코드
+---
 
 ```
 #include <iostream>
