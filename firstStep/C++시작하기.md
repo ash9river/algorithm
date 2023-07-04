@@ -25,8 +25,16 @@ ios_base::sync_with_stdio(false)는 C와 C++의 버퍼를 분리.<br/>
 이것을 사용하면 cin/cout이 더 이상 stdin/stdout과 맞춰 줄 필요가 없으므로 속도가 빨라진다. <br/><br/>
 단, 버퍼가 분리되었으므로 cin과 scanf, gets, getchar 등을 같이 혼용하면 안되고, cout과 printf, puts, putchar 등을 같이 사용하면 안된다.<br/>
 그 이외의 C++헤더나 STL의 사용법은 코딩해나가면서 숙지.  
-특히, 배열의 원소들을 정렬할 시, 그냥 C++의 sort() 함수 사용
-
+특히, 배열의 원소들을 정렬할 시, 그냥 C++의 sort() 함수 사용  
+cin과 getline을 혼용시, cin은 개행 문자를 남겨두기 때문에, 입력버퍼를 비워줘야 한다.
+```
+  int a;
+  string str;
+  cin>>a;
+  cin.ignore();
+  getline(cin,str);
+```
+입력 버퍼를 비우기 위해 cin.ignore() 함수 활용하기
 ---
 ### 그 외  
 for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
