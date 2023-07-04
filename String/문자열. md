@@ -1,0 +1,29 @@
+# 문자열
+---
+### 1. 문자열 검색
+---
+단순하고도 무식하게 검색
+```
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+vector<int> naiveSearch(const string& H,const string& N){
+    vector<int> ret;
+    for(int begin=0;begin+N.size()<=H.size();++begin){
+        bool matched=true;
+        for(int i=0;i<N.size();++i){
+            if(H[begin+i]!=N[i]){
+                matched=false;
+                break;
+            }
+        }
+        if(matched) ret.push_back(begin);
+    }
+    return ret;
+}
+```
+단순하므로 구현이 쉽다는 장점이 있어서 C의 strstr(), C++의 string::find(), JAVA의 indexOf() 등에 활용되는 알고리즘
+---
+KMP 알고리즘
+전처리 과정에서 정보를 저장하고(일치 테이블을 만듬) 검색에 활용
