@@ -34,7 +34,8 @@ cin과 getline을 혼용시, cin은 개행 문자를 남겨두기 때문에, 입
   cin.ignore();
   getline(cin,str);
 ```
-입력 버퍼를 비우기 위해 cin.ignore() 함수 활용하기
+입력 버퍼를 비우기 위해 cin.ignore() 함수 활용하기  
+
 ---
 ### 그 외  
 for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
