@@ -241,4 +241,40 @@ int main(){
   void function(const vector& v){}
   void function2(vector& v){}
 ```
+---
+### 배열 초기화하기  
+
+---
+1. memset으로 초기화
+```
+#include <cstirng>
+#include <vector>
+int main(){
+    int arr[10];
+    bool std::vector<int> v(10);
+    memset(arr,0,sizeof(arr));
+    memset(v,false,sizeof(v));
+}
+```
+1바이트 단위로 값을 세팅하기 떄문에 0이나 char 타입이 아닌 값으로 초기화할 시 오류 발생.
+
+---
+2. fill로 초기화
+```
+#include <algorithm>
+#include <vector>
+int main(){
+    int arr1[10];
+    std::fill(&arr1[0],&arr1[10],98);
+    int arr2[10][10];
+    std::fill(&arr2[0][0],&arr2[9][10],98);
+    int arr3[10][10][10];
+    std::fill(&arr3[0][0][0],&arr3[9][9][10],98);
+    std::vector<int> v1(10);
+    std::fill(v1.begin(),v1.end(),77);
+    std::vector<std::vector<int>> v2(10,std::vector<int>(10));
+    std::fill(v2.begin(),v2.end(),std::vector<int>(77,77));
+
+}
+
 
