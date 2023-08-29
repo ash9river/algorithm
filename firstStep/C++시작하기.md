@@ -72,7 +72,9 @@ for-each 문
   }
 ```
 *그러나 보통 1000회 이상의 반복문 사용시 for문보다 while문이나 for-each문이 더 성능에 좋다.  
+<!--
 *for문도 하향으로 비교하면 빠르다(단 비교연산자가 compare>0 일경우) [출처](https://stackoverflow.com/questions/1340589/are-loops-really-faster-in-reverse)
+!-->
 > 그냥 가독성 좋은게 제일 좋다.
 > >by 내 생각
 ---
