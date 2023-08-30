@@ -106,7 +106,7 @@ for-each 문
 * 알고리즘 문제 풀이할 때, 대부분의 경우 전역변수에 두는 편이 더 나음.(데이터 접근 및 변경에 용이하고, 스택영역에서 배열 생성의 메모리 제한을 감안하지 않아도 됨)
 ex) [백준 16496 큰 수 만들기](https://www.acmicpc.net/problem/16496)  
 
-##### 실패코드 
+### 실패코드 
 <details>
     <summary>자세히</summary>
 
@@ -185,7 +185,7 @@ int main(){
 ```
 </details>
 
-##### 성공 코드
+### 성공 코드
 
 <details>
     <summary>자세히</summary>
