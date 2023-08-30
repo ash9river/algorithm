@@ -185,8 +185,6 @@ int main(){
 ```
 </details>
 
----
-
 ##### 성공 코드
 
 <details>
