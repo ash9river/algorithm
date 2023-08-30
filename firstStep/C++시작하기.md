@@ -53,6 +53,54 @@ getline 함수 활용시
 
 ---
 ### 그 외  
+<details>
+    <summary></summary>
+
+
+for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
+##### 후위연산자는 값을 메모리에 기억했다가 증가시키기 때문임.  
+```
+  for(int i=0;i<n;++i) // 전위연산자
+```
+```
+  for(int i=0;i<n;i++) // 후위연산자
+```
+```
+  Foo& Foo::operator++()   // called for ++i
+  {
+      this-> data += 1;
+      return *this;
+  }
+  
+  Foo Foo::operator++(int ignored_dummy_value)   // called for i++
+  {
+      Foo tmp(*this);   // variable "tmp" cannot be optimized away by the compiler
+      ++(*this);
+      return tmp;
+  }
+```
+for-each 문
+```
+  vector<int> v(n);
+  for(int i=0;i<n;++i){
+      v[i]=i;
+  }
+  // vector를 for-each문으로 탐색할 수 있다.
+  for(int k:v){
+      cout<<k<<'\n;
+  }
+```
+*그러나 보통 1000회 이상의 반복문 사용시 for문보다 while문이나 for-each문이 더 성능에 좋다.  
+<!--
+*for문도 하향으로 비교하면 빠르다(단 비교연산자가 compare>0 일경우) [출처](https://stackoverflow.com/questions/1340589/are-loops-really-faster-in-reverse)
+!-->
+> 그냥 가독성 좋은게 제일 좋다.
+> >by 내 생각
+
+</details>
+
+asd
+
 for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
 ##### 후위연산자는 값을 메모리에 기억했다가 증가시키기 때문임.  
 ```
@@ -299,5 +347,6 @@ int main(){
 ```
 
 </details>
+
 ---
 
