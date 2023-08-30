@@ -54,7 +54,7 @@ getline 함수 활용시
 ---
 ### 그 외  
 <details>
-    <summary></summary>
+    <summary>자세히</summary>
 
 
 for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
