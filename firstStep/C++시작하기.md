@@ -98,57 +98,17 @@ for-each 문
 > >by 내 생각
 
 </details>
-
-asd
-
-for문 사용시 전위연산자가 후위연산자보다 성능이 아주 살짝 좋다.  
-##### 후위연산자는 값을 메모리에 기억했다가 증가시키기 때문임.  
-```
-  for(int i=0;i<n;++i) // 전위연산자
-```
-```
-  for(int i=0;i<n;i++) // 후위연산자
-```
-```
-  Foo& Foo::operator++()   // called for ++i
-  {
-      this-> data += 1;
-      return *this;
-  }
-  
-  Foo Foo::operator++(int ignored_dummy_value)   // called for i++
-  {
-      Foo tmp(*this);   // variable "tmp" cannot be optimized away by the compiler
-      ++(*this);
-      return tmp;
-  }
-```
-for-each 문
-```
-  vector<int> v(n);
-  for(int i=0;i<n;++i){
-      v[i]=i;
-  }
-  // vector를 for-each문으로 탐색할 수 있다.
-  for(int k:v){
-      cout<<k<<'\n;
-  }
-```
-*그러나 보통 1000회 이상의 반복문 사용시 for문보다 while문이나 for-each문이 더 성능에 좋다.  
-<!--
-*for문도 하향으로 비교하면 빠르다(단 비교연산자가 compare>0 일경우) [출처](https://stackoverflow.com/questions/1340589/are-loops-really-faster-in-reverse)
-!-->
-> 그냥 가독성 좋은게 제일 좋다.
-> >by 내 생각
----
+<hr>
 지역 변수로 선언된 배열을 함수의 매개변수 전달시, 직접 전달해서 사용하지 않고, 다른 방법 [사용](http://www.tcpschool.com/c/c_memory_structure)
 * 지역변수는 스택 영역에 생성되고, 전역변수는 데이터 영역에 생성되기 때문에 데이터가 많은 경우 함수의 매개 변수로 전달시 실패할 수도 있음.(stack memory 초과)
 * 알고리즘 문제 풀이할 때, 대부분의 경우 전역변수에 두는 편이 더 나음.(데이터 접근 및 변경에 용이하고, 스택영역에서 배열 생성의 메모리 제한을 감안하지 않아도 됨)
 ex) [백준 16496 큰 수 만들기](https://www.acmicpc.net/problem/16496)  
-##### 실패코드   
----
-```
+<hr>
+##### 실패코드 
+<details>
+    <summary>자세히</summary>
 
+```
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -221,10 +181,14 @@ int main(){
     }
 }
 ```
+</details>
+
 ---
 
 ##### 성공 코드
----
+<hr>
+<details>
+    <summary>자세히</summary>
 
 ```
 #include <iostream>
@@ -300,13 +264,21 @@ int main(){
     }
 }
 ```
+
+</details>
+
 ---
 배열의 매개변수 전달이 불가피한 경우, &를 사용하여 참조자로 사용  
-[참고링크](https://www.acmicpc.net/board/view/38804)
+<details>
+    <summary>자세히</summary>
+
 ```
   void function(const vector& v){}
   void function2(vector& v){}
 ```
+[참고링크](https://www.acmicpc.net/board/view/38804)
+</details>
+
 ---
 ### 배열 초기화하기  
 <hr>
