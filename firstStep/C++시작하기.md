@@ -281,7 +281,6 @@ int main(){
 
 ---
 ### 배열 초기화하기  
-<hr>
 
 <details>
     <summary>배열 초기화 하는 방법</summary>
