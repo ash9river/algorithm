@@ -338,6 +338,7 @@ int main(){
 
 </details>
 <hr>
+
 ### 부동 소수점 출력
 
 <details>
