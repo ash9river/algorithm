@@ -337,8 +337,7 @@ int main(){
     loat, double 타입의 실수 절대값 함수(abs)의 오버로딩
 
 </details>
-<br><hr>
-
+<hr>
 ### 부동 소수점 출력
 
 <details>
