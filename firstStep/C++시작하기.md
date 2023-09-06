@@ -285,7 +285,7 @@ int main(){
 <details>
     <summary>배열 초기화 하는 방법</summary>
 
-1. memset으로 초기화
+##### 1. memset으로 초기화
 ```
 #include <cstirng>
 #include <vector>
@@ -299,7 +299,7 @@ int main(){
 1바이트 단위로 값을 세팅하기 떄문에 0이나 char 타입이 아닌 값으로 초기화할 시 오류 발생.
 
 ---
-2. fill로 초기화
+#### 2. fill로 초기화
 ```
 #include <algorithm>
 #include <vector>
