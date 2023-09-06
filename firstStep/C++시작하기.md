@@ -285,7 +285,7 @@ int main(){
 <details>
     <summary>배열 초기화 하는 방법</summary>
 
-##### 1. memset으로 초기화
+#### 1. memset으로 초기화
 ```
 #include <cstirng>
 #include <vector>
