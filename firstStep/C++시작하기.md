@@ -321,3 +321,19 @@ int main(){
 
 ---
 
+### 절대값 함수
+
+<details>
+    <summary>절대값 함수 헤더에 따른 차이</summary>
+
+1. std::abs()
+    변수가 int형으로 프로모션할 수 없는 형태이면 오류 발생.
+
+2. #include <algorithm>
+    int 타입의 정수 절대값 함수(abs)의 오버로딩
+
+3. #include <cmath>
+    loat, double 타입의 실수 절대값 함수(abs)의 오버로딩
+}
+</details>
+
