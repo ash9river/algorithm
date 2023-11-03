@@ -390,6 +390,9 @@ precision(5) = 전체 자릿수를 5로 조절했기 때문에 1234.6이 출력�
 setf와 반대되는 표현이 unsetf이다. (설정 해제)<br>
 <br>
 3번에서 소수점 아래 자릿수를 6으로 고정했고, 4번에서 이 설정을 해제하고, 5번에서 소수점 아래 자릿수를 5로 고정했다.
+<br/>
+  
+`cout << fixed << setprecision(n)`: 소수점 아래 n자리까지 반올림하여 출력
 </div>
 [출처](https://semaph.tistory.com/7)
 </details>
