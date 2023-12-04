@@ -87,12 +87,3 @@ key값을 오름차순으로 저장한다. << 그리디에서 사용할 때는 �
     m.clear();
 ```
 
----
-도전과제 : set 또는 map 헤더를 이용하여 문제를 풀어보자.
-
-[수 나누기 게임](https://www.acmicpc.net/problem/27172) <br/>
-[이중 우선순위 큐](https://www.acmicpc.net/problem/7662) <br/>
-[문제 추천 시스템](https://www.acmicpc.net/problem/21939) <br/>
-[문제 추천 시스템2](https://www.acmicpc.net/problem/21944)
-
-추후 수정
