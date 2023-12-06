@@ -39,9 +39,18 @@ cin과 getline을 혼용시, cin은 개행 문자를 남겨두기 때문에, 입
 EOF처리는 엄청 쉽다.
 ```
   string a;
-  while(!cin.eof()){
+  while(true){
     cin>>a;
+    if(cin.eof()) break;
   }
+```
+또는
+```
+    string a;
+    while(cin>>a){
+        // 활용 코드가 들어갑니다
+    }
+
 ```
 getline 함수 활용시
 ```
