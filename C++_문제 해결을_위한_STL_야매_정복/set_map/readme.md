@@ -1,7 +1,7 @@
 > 은근히 중요한 set과 map<br/>
 > 해쉬를 사용하고 싶으면 unordered_set, unordered_map 사용<br/>
 > BST를 사용하고 싶으면 set, multiset, map, multimap 사용<br/>
-
+> BBST를 사용하고 싶으면 treap 구현
 ## set
 
 `#include <set>`
@@ -87,3 +87,21 @@ key값을 오름차순으로 저장한다. << 그리디에서 사용할 때는 �
     m.clear();
 ```
 
+---
+
+## unordered_set & unordered_map
+
+`#include <unordered_set>`
+`#include <unordered_map>`
+기본적인 구성은 set & map과 같다.<br>
+정렬을 하지 않고서 삽입한 일련의 순서를 유지시키고 싶다면 set이나 map이 아니라 unordered_set 또는 unordered_map 사용<br>
+unordered_multiset은 중복된 원소 삽입 시 일련의 순서로 삽입되는 것이 아니라 이미 존재하는 중복 원소 뒤에 이어서 삽입된다.<br>
+<br>
+set이나 map과 달리 hash function을 사용하여 ***O(1)*** 로 insert, erase, find가 수행된다.
+
+```
+     unordered_set<int> s;
+     unordered_multiset<int> ms;
+     unordered_map<int> m;
+     unordered_multimap<int> mm;
+```
