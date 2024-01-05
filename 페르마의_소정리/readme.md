@@ -94,7 +94,7 @@ int main(){
    //nPr을 계산할려면 nCr(f[n],f[r])이다. 함수이름을 변경하면 덜헷갈림
 }
 ```
-# 사용한 코드
+# 사용한 코드(백준 11401)
 ```cpp
 #include <iostream>
 #include <vector>
