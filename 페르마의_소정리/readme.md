@@ -1,22 +1,22 @@
 ## 모듈러 연산 성질
 
-$
+$$
    (a+b)\ mod\ M =((a\ mod\ M)+(b\ mod\ M))\ mod\ M
-$
+$$
 
-$
+$$
    (a-b)\ mod\ M =((a\ mod\ M)-(b\ mod\ M))\ mod\ M
-$
+$$
 
 - 음수로 반환할 수 있어서, 코딩할때는 M을 추가로 더해준다.
 
-$
+$$
    (a-b)\ mod\ M =((a\ mod\ M)-(b\ mod\ M)+M)\ mod\ M
-$
+$$
 
-$
+$$
    (a\times b)\ mod\ M =((a\ mod\ M)\times(b\ mod\ M))\ mod\ M
-$
+$$
 
 - 모듈러 나눗셈은 페르마의 소정리를 사용하여 모듈러 역원을 구한다.
 
