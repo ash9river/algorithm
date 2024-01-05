@@ -2,6 +2,7 @@
 > 해시를 사용하고 싶으면 unordered_set, unordered_map 사용<br/>
 > BST를 사용하고 싶으면 set, multiset, map, multimap 사용<br/>
 > BBST를 사용하고 싶으면 treap 구현
+
 ## set
 
 `#include <set>`
@@ -9,7 +10,7 @@
 그냥 집합
 
 
-```
+```cpp
     set<int> s; //선언
     s.insert(3); //삽입
     // set 순회
@@ -32,7 +33,7 @@ set과 상당히 비슷하나, 중복된 원소를 허용한다는 점에서 다
 
 `#include <set>`
 
-```
+```cpp
     multiset<int> s;
     s.insert(3);
     s.insert(3);
@@ -70,7 +71,7 @@ map<key,value>
 키와 값을 pair형태로 저장한다. 
 key값을 오름차순으로 저장한다. << 그리디에서 사용할 때는 이 특성을 자주 이용한다.
 
-```
+```cpp
     map<int,int> m;
     m.insert({3,3}); //pair형태로 중괄호 사용하여 저장
     // map 탐색
