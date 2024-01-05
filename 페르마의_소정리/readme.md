@@ -47,14 +47,14 @@ $$
 - 충분히 큰 자연수 $n$ 과 $0 < r < n$인 자연수 $r$, 소수 $p$
 
 $$
-   {n \choose r} (mod\ p) =\frac{n!}{r!\times(n-r)!} (mod\ p) = n!\times modInv(r!(n-r)!,p)\ (mod\ p)
+   {n \choose r} (mod\ p) =\frac{n!}{r!\times(n-r)!} (mod\ p) = n!\times modInv(r!(n-r)! \ ,p)\ (mod\ p)
 $$
 
 $$
     = n! \times ((r!\times (n-r)!)^{p-2}\ mod\ p)\ (mod\ p) = ((n!\ mod\ p)\times (r!\times (n-r)!)^{p-2}\ mod\ p)\ mod\ p
 $$
 
-- 여기서 $modInv$인 $(r!\times (n-r)!\,)^{p-2}\ mod\ p\ $의 계산은 분할정복을 사용한 거듭제곱 기법을 이용한다.
+- 여기서 $modInv$인 $(r!\times (n-r)!\)^{p-2}\ mod\ p\ $의 계산은 분할정복을 사용한 거듭제곱 기법을 이용한다.
 
 $$
    x^n =
