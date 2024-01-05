@@ -8,7 +8,7 @@ $$
    (a-b)\ mod\ M =((a\ mod\ M)-(b\ mod\ M))\ mod\ M
 $$
 
-- 음수로 반환할 수 있어서, 코딩할때는 M을 추가로 더해준다.
+- $a>b$,$a \ mod \ M<b\ mod M$인 경우음수로 반환할 수 있어서, 코딩할때는 M을 추가로 더해준다.
 
 $$
    (a-b)\ mod\ M =((a\ mod\ M)-(b\ mod\ M)+M)\ mod\ M
