@@ -45,9 +45,11 @@ $$
 - 모듈러 역원을 이용하여 이항 계수를 $O(nlogp)$만에 빠르게 구할 수 있다.
 - 분할정복을 이용한 거듭제곱 방식도 사용한다.
 
-> ${n \choose r} = _{n}\mathrm{C}_{r}$입니다.
+$$
+   {n \choose r} = _{n}\mathrm{C}_{r}
+$$
 
-- 충분히 큰 자연수 $n$ 과 $0<r<n$인 자연수 $r$, 소수 $p$
+- 충분히 큰 자연수 $n$ 과 $0 < r < n$인 자연수 $r$, 소수 $p$
 
 $$
    {n \choose r} (mod\ p) =\frac{n!}{r!\times(n-r)!} = n!\times modInv(r!(n-r)!,p)\ (mod\ p) = n! \times ((r!\times (n-r)!)^{p-2}\ mod\ p)\ (mod\ p) = ((n!\ mod\ p)\times (r!\times (n-r)!)^{p-2}\ mod\ p)\ mod\ p
