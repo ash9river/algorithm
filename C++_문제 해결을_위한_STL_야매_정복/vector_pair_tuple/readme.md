@@ -14,7 +14,7 @@ array는 vector가 있어서 잘 안쓰는 경향이...
 
 `#include <vector>`
 
-```
+```cpp
    vector<int> v1; //1차원 배열 생성
    vector<int> v1_init(10,987654321); //1차원 배열 [10]생성, 각 배열의 원소를 987654321로 초기화
    vector<vector<int>> v2; //2차원 배열 생성 
@@ -29,7 +29,7 @@ array는 vector가 있어서 잘 안쓰는 경향이...
 
 ### vector의 resize
 
-```
+```cpp
     vector<int> v;
     v.resize(10);
     vector<vector<int>> v2;
@@ -40,7 +40,8 @@ array는 vector가 있어서 잘 안쓰는 경향이...
 ```
 
 ### vector에서 쓰이는 것들
-```
+
+```cpp
     vector<int> v1(10,0);
     v1.begin(); //v1의 제일 첫 주소
     v1.end();   //v1의 가장 마지막 인덱스+1의 주소
@@ -62,7 +63,7 @@ array는 vector가 있어서 잘 안쓰는 경향이...
 
 쌍으로 값을 저장하기 편하다. 보통 x,y좌표를 저장하는 데에 사용한다.
 
-```
+```cpp
     pair<int,int> p;
     p=make_pair(1,2); //make_pair로 pair 만들기
     p={1,2}; //괄호로 pair 만들기
@@ -82,7 +83,7 @@ array는 vector가 있어서 잘 안쓰는 경향이...
 
 세 개의 원소를 묶어서 저장, 보통 pair<int,pair<int,int>>로 만들기 귀찮아서 사용하는데 tuple이 더 귀찮을 때가 있다...
 
-```
+```cpp
     tuple<int,int,int> t;
     t=make_tuple(1,2,3); //make_tuple로 tuple 만들기
     t={1,2,3}; //괄호로 tuple만들기
