@@ -1,7 +1,6 @@
 > 은근히 중요한 set과 map<br/>
 > 해시를 사용하고 싶으면 unordered_set, unordered_map 사용<br/>
-> BST를 사용하고 싶으면 set, multiset, map, multimap 사용<br/>
-> BBST를 사용하고 싶으면 treap 구현
+> BBST를 사용하고 싶으면 set, multiset, map, multimap 사용<br/>
 
 ## set
 
