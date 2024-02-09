@@ -1,5 +1,10 @@
 # 오일러 피함수
 
+- 자연수 $n$과 $n$보다 작은 자연수 $x$에 대하여 $gcd(x,n)=1$인 $x$들의 수를 구하는 방법
+
+$$
+    \phi (n) = \phi \left( \prod_{i=1}^r p_{i}^{k_{i}} \right) = 
+$$
 
 ```cpp
 #include <iostream>
